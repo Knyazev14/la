@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
  <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220513140918">
 	<title>Главная</title>
 </head>
 
@@ -44,7 +44,7 @@
 								<img class="banner__line" src="img/line1.svg" alt="image">
 							</div>
 							<div class="banner__left">
-								<img class="banner__left-image" src="img/banner.png" alt="image">
+								<picture><source srcset="img/banner.webp" type="image/webp"><img class="banner__left-image" src="img/banner.png" alt="image"></picture>
 							</div>
 						</div>
 						<div class="banner__mouse">
@@ -186,10 +186,14 @@
 								<label class="form__label" for="formPhone">Телефон</label>
 								<input id="formPhone" placeholder="8 _____________" class="form__input" type="text">
 							</p>
-							<p class="checkbox">
-								<input class="form__checkbox" name="agreement" id="formAgremment" type="checkbox">
-								<label class="checkbox__label" for="formAgreement">Согласен с политикой данных</label>
-							</p>
+							
+							<label class="checkbox">
+								<span class="check-style"></span>
+								<input class="checkbox__input" type="checkbox" name="agreement">
+								Согласен с политикой данных
+							</label>
+
+
 							<button class="form__btn">Войти</button>
 						</form>
 					</div>
@@ -214,7 +218,7 @@
 </footer>
 	</div>
 
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js?_v=20220513140918"></script>
 </body>
 
 </html>
